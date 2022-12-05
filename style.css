@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary:#3dcfd3;
+    --light:#ffffff;
+    --dark:#070606;
+    --bg-primary:#161616;
+    --text-secondary:#89898d;
+    --bg-secondary:#f2f2f2;
+}
+
+
+.container{
+    width: 1170px;
+    /* width: 60vw; */
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+.aline-item{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-self: center;
+}
+.flex1{
+    flex: 1;
+}
+header {
+    background-color: var(--bg-primary);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+i{
+    cursor: pointer;
+}
+
+.logo img{
+    width: 250px;
+    cursor: pointer;
+}
+.nav{
+    padding: 1rem 0;
+}
+.menu ul li {
+    margin-right: 2rem;
+    list-style-type: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--light);
+    transition: all .5s;
+}
+.menu ul li a:hover{
+    color: var(--primary);
+}
+.nav .btn button a{
+    text-decoration: none;
+    color: var(--dark);
+    transition: all .5s;
+}
+.nav .btn button:hover a{
+    color: var(--primary);
+}
+.nav .btn button {
+    border: 2px solid transparent;
+    background: var(--primary);
+    padding: .7rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .5s;
+}
+.nav .btn button:hover{
+    color: var(--primary);
+    background-color: transparent;
+    border: 2px solid var(--primary);
+}
+.img img{
+    width: 500px;
+}
+.banner_content{
+    padding-left: 2rem;
+    margin-top: -4rem;
+}
+.banner_content h3{
+    color: var(--primary);
+}
+.banner_content h1{
+    font-size: 70px;
+    line-height: 90px;
+    padding-bottom: 2rem;
+    color: var(--light);
+}
+.banner_content h1 span{
+    color: var(--primary);
+}
+.banner_content p{
+    color: var(--light);
+    padding-bottom: 2rem;
+}
+.banner_content button{
+    color: var(--primary);
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    padding: .7rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+.banner_content button:hover{
+    border: 2px solid transparent;
+    background: var(--primary);
+    color: var(--dark);
+}
+
+.about_content{
+    margin: 8rem 0;
+}
+.about_content .img img{
+    width: 350px;
+}
+.about_content .content h3{
+    font-size: 27px;
+    font-weight: 400;
+}
+.about_content .content h3 span{
+    color: var(--primary);
+}
+.about_content .content h5{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 1.6rem 0;
+}
+.about_content .content p{
+    color: var(--text-secondary);
+    padding-bottom: 1.5rem;
+}
+.about_content .content i{
+    font-size: 20px;
+    margin-right: 1.4rem;
+    background: var(--bg-primary);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--light);
+    transition: all .5s;
+}
+.about_content .content i:hover{
+    background: var(--primary);
+}
+.service_content{
+    text-align: center;
+}
+.service{
+    background: var(--bg-secondary);
+    padding: 6rem 0;
+}
+.service_content h3 {
+    font-size: 27px;
+    font-weight: 500;
+}
+.service_content h3 span{
+    color: var(--primary);
+}
+.service_content p{
+    color: var(--text-secondary);
+}
+.card i{
+    font-size: 50px;
+    background: var(--primary);
+    padding: 1rem;
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+    margin-top: 5rem;
+}
+.card{
+    background: var(--light);
+    text-align: center;
+    padding: 3rem 2rem;
+    position: relative;
+    transition: all .5s ease;
+}
+.card h3{
+    margin-top: 2rem;
+    font-weight: 400;
+}
+.card p{
+    margin-top: .5rem;
+    color: var(--text-secondary);
+}
+.card:hover{
+    background: var(--bg-primary);
+    color: var(--light);
+}
+.freelacer{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./camera.png);
+    text-align: center;
+    padding: 7rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
+}
+.freelacer .content h1{
+    color: var(--light);
+    font-size: 45px;
+}
+.freelacer .content p{
+    color: var(--light);
+    font-size: 17px;
+    padding: 10px;
+}
+.freelacer .content button{
+    border: 2px solid transparent;
+    background: var(--primary);
+    padding: .6rem 3rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .5s;
+}
+.freelacer .content button:hover{
+    color: var(--primary);
+    background-color: transparent;
+    border: 2px solid var(--primary);
+}
+.work_img{
+    margin-top: 5rem;
+}
+.work_img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 5rem;
+    margin-top: 7rem;
+}
+.work{
+    padding: 6rem 0;
+}
+.card1{
+    position: relative;
+    transition: all .5s;
+}
+.hover {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: var(--primary);
+    opacity: 80%;
+    width: 100%;
+    height: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    visibility: hidden;   
+}
+.card1:hover .hover{
+    visibility: visible;
+}
+
+.card1 span{
+    color: var(--light);
+}
+.blog{
+    background: var(--bg-primary);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+}
+.blog_content{
+    padding: 6rem 0;
+}
+.blog_content h3{
+    color: var(--light);
+}
+.blog_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    padding-bottom: 10rem;
+}
+.blog_item {
+    background: var(--light);
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+.blog_item .content{
+    padding: 1rem 2rem;
+}
+.blog_item .content h3{
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: .2rem;
+}
+.blog_item .content span{
+    font-size: 13px;
+    color: var(--text-secondary);
+    /* padding-bottom: 1rem; */
+}
+.blog_item .content p{
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 1rem 0;
+}
+.blog_item .content a{
+    text-decoration: none;
+    color: var(--dark);
+    margin-top: 1rem;
+}
+
+.contact  h3{
+    color: var(--dark);
+    padding-top:6rem;
+}
+.way1 i{
+    font-size: 40px;
+    margin-bottom: 3rem;
+}
+.way1{
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+.way1 h1{
+    font-size: 25px ;
+    font-weight: 300;
+}
+.way1 h6{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+.contact_way{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5rem;
+}
+.form form{
+    text-align: center;
+    padding-bottom: 7rem;
+    width: 95%;
+    margin: auto;
+}
+.form form input{
+    display: block;
+    width: 100%;
+    padding: .7rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border:2px solid var(--bg-secondary);
+}
+.form form textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    outline: none;
+    border:2px solid var(--bg-secondary);
+}
+.form form button{
+    border: 2px solid transparent;
+    background: var(--primary);
+    padding: .7rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .5s;
+}
+.form form button:hover{
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+}
+.footer{
+    background: var(--bg-primary);
+    padding: 8rem 0;
+    text-align: center;
+}
+.footer .social{
+    margin: 3rem 0;
+}
+.footer p{
+    color: var(--text-secondary)
+}
+.footer p span {
+    color: var(--primary);
+    font-weight: 500;
+}
+.footer img{
+    width: 250px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.footer .social i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: var(--primary);
+    font-size: 22px;
+    margin-right: 1rem;
+    transition: all .5s;
+}
+.footer .social i:hover{
+    background: var(--bg-secondary);
+
+}
+
+
+.main{
+    position:relative;
+}
+.hamberger{
+    position:absolute;
+    top:55px;
+    right:40px;
+    z-index:11;
+    background:none;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    display:none;
+}
+.hamberger img{
+    width:30px;
+}
+
+.mobile-nav{
+   position: fixed;
+   top:0;
+   left:0;
+   z-index:1001;
+   background:var(--bg-primary);
+   width:100%;
+   height:100%;
+   padding:2rem;
+   padding-top:5rem;
+   transform: translateX(-100%);
+   -webkit-transform: translateX(-100%);
+   -moz-transform: translateX(-100%);
+   -ms-transform: translateX(-100%);
+   -o-transform: translateX(-100%);
+   transition:all .5s ease-in-out;
+   -webkit-transition:all .5s ease-in-out;
+   -moz-transition:all .5s ease-in-out;
+   -ms-transition:all .5s ease-in-out;
+   -o-transition:all .5s ease-in-out;
+}
+.open{
+    transform:translateX(0);
+    -webkit-transform:translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform:translateX(0);
+    -o-transform:translateX(0);
+}
+.times{
+   position:fixed;
+   top:30px;
+   right:30px;
+   border: none;
+   background:none;
+   outline:none;
+   cursor: pointer; 
+}
+.times i{
+    font-size: 40px;
+    color: var(--primary);
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+    text-align: center;
+    margin-top: -3rem;
+}
+.mobile-nav ul li{
+    margin-bottom: 2rem;
+}
+.mobile-nav ul li a{
+    display: inline-block;
+    color:var(--light);
+    text-decoration:none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+.mobile-nav ul li a:hover{
+    transform: scale(1.1);
+}
+.mobile-nav ul li:hover a{
+    color: var(--primary);
+}
+.mobile-nav img{
+    width: 250px;
+    cursor: pointer;
+    position: relative;
+    top: -69px;
+
+}
